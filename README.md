@@ -4,5 +4,5 @@
 
 Алгоритм работы криптосистемы Гольдвассера-Микали:
 
-![image](https://github.com/halissha/lamport_sign/blob/14914bd16e96eab69e9bb97494fdb70d266cb61c/goldwasser.jpg)
+![image](https://github.com/halissha/lamport_sign/blob/d162cecd7293400bdf3ca37186e9cb80e4543428/goldwasser.jpg)
 ![image](https://github.com/halissha/lamport_sign/blob/14914bd16e96eab69e9bb97494fdb70d266cb61c/original.jpg)
