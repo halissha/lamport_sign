@@ -37,7 +37,9 @@ class RecipientWindow(QMainWindow):
         open_key = goldwasser.generate_key()
         self.label_openkey_text.setText(str(open_key['pub']))
         self.openkey_cypher = open_key['pub']
+        print(f"Сгенерирован открытый ключ получателя (открытый ключ для шифрования [p, q]):\n{str(open_key['pub'])}")
         self.secretkey_cypher = open_key['priv']
+        print(f"Сгенерирован закрытый ключ отправителя (закрытый ключ для шифрования [n, y]):\n{str(open_key['priv'])}")
         self.button_sendkey.setEnabled(True)
         return open_key
 
@@ -55,13 +57,6 @@ class RecipientWindow(QMainWindow):
             QMessageBox.about(self, "Проверка прошла успешно", "Подпись верна!")
         else:
             QMessageBox.about(self, "Проверка прошла успешно", "Подпись неверна")
-
-
-
-
-
-
-
 
     def configure_labels(self):
         self.label_openkey = QLabel('Открытый ключ для текста')

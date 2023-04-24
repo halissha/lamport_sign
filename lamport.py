@@ -54,6 +54,4 @@ def verify(signature_, message, openkey):
         hashed_mes.append(openkey[i][int(bit)])
     for digit in signature_:
         sign_hashed.append(hash256(digit))
-    print(hashed_mes)
-    print(sign_hashed)
     return hashed_mes == sign_hashed
